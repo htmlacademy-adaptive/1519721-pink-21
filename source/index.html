@@ -16,22 +16,22 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>
+            <a class="site-list__link" aria-label="Главная href="#>
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__link" href="catalog.html" aria-label="Фотографии">
               Фотографии
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link" href="form.html" aria-label="Конкурс">
               Конкурс
             </a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru">
+            <a class="site-list__link" href="https://htmlacademy.ru" aria-label="HTML Academy">
               HTML Academy
             </a>
           </li>
@@ -53,10 +53,10 @@
           </p>
         </header>
         <a class="button download__download-link" href="http://www.apple.com/itunes/working-itunes/market/" aria-label="Скачать приложение">Скачать приложение</a>
-        <ul class="download__OS-list">
-          <li><a class="download__OS download__OS--apple" href="http://www.apple.com/itunes/working-itunes/market/" aria-label="скачать для iOS">Apple</a></li>
-          <li><a class="download__OS download__OS--android" href="https://play.google.com/store/apps" aria-label="скачать для Android">Android</a></li>
-          <li><a class="download__OS download__OS--widows" href="https://www.microsoft.com/ru-ru/store/apps" aria-label="скачать для Windows">Windows</a></li>
+        <ul class="download__os-list">
+          <li><a class="download__os-item download__os-item--apple" href="http://www.apple.com/itunes/working-itunes/market/" aria-label="скачать для iOS">Apple</a></li>
+          <li><a class="download__os-item download__os-item--android" href="https://play.google.com/store/apps" aria-label="скачать для Android">Android</a></li>
+          <li><a class="download__os-item download__os-item--widows" href="https://www.microsoft.com/ru-ru/store/apps" aria-label="скачать для Windows">Windows</a></li>
         </ul>
         <p class="download__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, Mac OS, Windows 8</p>
       </div>
@@ -126,7 +126,7 @@
         <p class="reviews__author">Николай Петров</p>
         <p class="reviews__author-description">25 лет, водитель трамвая</p>
       </div>
-      <div class="reviews__toggles slider-toggles">
+      <div class="reviews__toggles slider__toggles">
         <button class="slider__toggle slider__toggle--current" type="button" aria-label="1">1</button>
         <button class="slider__toggle" type="button" aria-label="2">2</button>
         <button class="slider__toggle" type="button" aria-label="3">3</button>
@@ -141,25 +141,25 @@
       <h2 class="visually-hidden">Стоимость приложения</h2>
       <div class="price__slider">
         <table class="price__table table-price">
-          <thead>
-            <tr>
-              <th class="table-price__header"></th>
-              <th class="table-price__header">
+          <thead class="table-price__head">
+            <tr class="table-price__row">
+              <th class="table-price__hidden"></th>
+              <th class="table-price__cell">
                 <span class="table-price__title-type">База</span>
                 <span class="table-price__title-price">1,99 USD</span>
               </th>
-              <th class="table-price__header table-price__header--hit">
+              <th class="table-price__cell table-price__cell--hit">
                 <span class="table-price__title-type">Стандарт</span>
                 <span class="table-price__title-price">3,99 USD</span>
               </th>
-              <th class="table-price__header">
+              <th class="table-price__cell">
                 <span class="table-price__title-type">Анлим</span>
                 <span class="table-price__title-price">9,99 USD</span>
               </th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
+          <tbody class="table-price__body">
+            <tr class="table-price__row">
               <td class="table-price__cell">Розовый фильтр</td>
               <td class="table-price__cell">
                 <div class="table-price__feature">
@@ -186,7 +186,7 @@
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr class="table-price__row">
               <td class="table-price__cell">Смайлики</td>
               <td class="table-price__cell">
                 <div class="table-price__feature">
@@ -213,7 +213,7 @@
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr class="table-price__row">
               <td class="table-price__cell">Комментарии</td>
               <td class="table-price__cell">
                 <div class="table-price__feature">
@@ -242,7 +242,7 @@
             </tr>
           </tbody>
         </table>
-        <div class="price__toggles slider-toggles">
+        <div class="price__toggles slider__toggles">
           <button class="slider__toggle" type="button" aria-label="1">1</button>
           <button class="slider__toggle slider__toggle--current" type="button" aria-label="2">2</button>
           <button class="slider__toggle type=" button" aria-label="3">3</button>
