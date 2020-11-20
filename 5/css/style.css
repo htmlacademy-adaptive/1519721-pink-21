@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff"); }
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff"); }
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff"); }
+
+.page {
+  min-width: 320px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  background-color: #ffffff; }
+
+.page-header {
+  background-color: #283645;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 32px;
+  font-weight: bold; }
+
+.main-nav__wrapper {
+  margin: 0 auto; }
+
+.download__wrapper {
+  background-color: #1d2631; }
+
+.download__header {
+  background-image: url("../img/back-mobile.png");
+  background-repeat: no-repeat;
+  padding: 95px 0 320px 0;
+  margin-bottom: 30px; }
+
+.download__slogan {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 28.8px; }
+
+.download__download-link {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 29px;
+  padding: 21px 39px 21px 38px; }
+
+.download__text {
+  color: #ffffff; }
+
+.download__os-list {
+  margin-top: 60px;
+  list-style: none; }
+
+.features__list-wrapper {
+  background-color: #dddfe0; }
+
+.features__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28.8px; }
+
+.features__list {
+  list-style: none; }
+
+.features__item-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000; }
+
+.features__item-text {
+  font-weight: 400; }
+
+.reviews {
+  background-color: #ffffff; }
+
+.reviews__author {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px; }
+
+.reviews__quote-text {
+  font-weight: 400;
+  line-height: 30px; }
+
+.price {
+  background-color: #dddfe0; }
+
+.table-price {
+  border-color: #e5e5e5;
+  font-weight: 400;
+  line-height: 30px; }
+
+.table-price__title-type {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase; }
+
+.table-price__title-price {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: uppercase; }
+
+.table-price__cell {
+  background-color: #ffffff;
+  padding: 24px 125px 25px 20px; }
+
+.table-price__cell--head {
+  background-color: #283645;
+  padding: 19px 95px 35px 95px; }
+
+.table-price__hidden {
+  display: none; }
+
+.table-price__cell--mobile-hidden {
+  display: none; }
+
+.contacts-info__list {
+  list-style: none; }
+
+.contacts-info__title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28.8px; }
+
+.contacts-info__connect {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24.51px; }
+
+.contacts-info__data {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32.68px;
+  text-decoration: none;
+  color: #d22856; }
+
+.table-price__head {
+  background-color: #ffffff; }
+
+.site-list {
+  list-style: none; }
+
+.site-list__link {
+  text-decoration: none;
+  color: #ffffff; }
+
+.copyright__text {
+  font-weight: 400;
+  line-height: 18px; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+/*# sourceMappingURL=style.css.map */
