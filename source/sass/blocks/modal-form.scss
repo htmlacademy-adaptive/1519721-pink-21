@@ -1,0 +1,20 @@
+.modal-form__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+}
+
+.modal-form__text {
+  max-width: 280px;
+  text-align: center;
+}
+
+.modal-form__text--close-window {
+  max-width: 266px;
+}
+
+.modal-form__bottom--silver {
+  background-color: $silver;
+  padding: 52px 0 52px 0;
+}
