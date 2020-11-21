@@ -60,7 +60,9 @@
   padding: 21px 39px 21px 38px; }
 
 .download__text {
-  color: #ffffff; }
+  color: #ffffff;
+  max-width: 280px;
+  text-align: center; }
 
 .download__os-list {
   margin-top: 60px;
@@ -72,10 +74,17 @@
 .features__title {
   font-size: 24px;
   font-weight: 300;
-  line-height: 28.8px; }
+  line-height: 28.8px;
+  max-width: 280px;
+  text-align: center; }
 
 .features__list {
-  list-style: none; }
+  list-style: none;
+  padding: 0; }
+
+.features__item {
+  max-width: 280px;
+  text-align: center; }
 
 .features__item-title {
   font-size: 18px;
@@ -92,11 +101,15 @@
   color: #000000;
   font-size: 18px;
   font-weight: 700;
-  line-height: 30px; }
+  line-height: 30px;
+  max-width: 280px;
+  text-align: center; }
 
 .reviews__quote-text {
   font-weight: 400;
-  line-height: 30px; }
+  line-height: 30px;
+  max-width: 280px;
+  text-align: center; }
 
 .price {
   background-color: #dddfe0; }
@@ -107,6 +120,7 @@
   line-height: 30px; }
 
 .table-price__title-type {
+  display: block;
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
@@ -122,11 +136,13 @@
 
 .table-price__cell {
   background-color: #ffffff;
-  padding: 24px 125px 25px 20px; }
+  padding: 24px 20px 25px 20px;
+  width: 236px; }
 
 .table-price__cell--head {
   background-color: #283645;
-  padding: 19px 95px 35px 95px; }
+  padding: 19px 20px 35px 20px;
+  width: 236px; }
 
 .table-price__hidden {
   display: none; }
@@ -140,7 +156,8 @@
 .contacts-info__title {
   font-weight: 300;
   font-size: 24px;
-  line-height: 28.8px; }
+  line-height: 28.8px;
+  max-width: 280px; }
 
 .contacts-info__connect {
   font-weight: 700;
@@ -153,6 +170,10 @@
   line-height: 32.68px;
   text-decoration: none;
   color: #d22856; }
+
+.contacts-info__item {
+  max-width: 280px;
+  text-align: center; }
 
 .table-price__head {
   background-color: #ffffff; }
