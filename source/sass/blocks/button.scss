@@ -11,3 +11,28 @@
   box-sizing: border-box;
   width: 276px;
 }
+
+.button--pink {
+  border: 3px solid $pink;
+  box-sizing: border-box;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: $pink;
+  width: 280px;
+  padding: 21px 0 21px 0;
+}
+
+.button--gray {
+  opacity: 0.1;
+  border: 3px solid $dark-blue;
+  box-sizing: border-box;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: $dark-blue;
+  width: 280px;
+  padding: 21px 0 21px 0;
+}
