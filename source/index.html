@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -58,7 +59,7 @@
           <li><a class="download__os-item download__os-item--android" href="https://play.google.com/store/apps" aria-label="скачать для Android">Android</a></li>
           <li><a class="download__os-item download__os-item--widows" href="https://www.microsoft.com/ru-ru/store/apps" aria-label="скачать для Windows">Windows</a></li>
         </ul>
-        <p class="download__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, Mac OS, Windows 8</p>
+        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, Mac OS, Windows 8</p>
       </div>
     </section>
 
@@ -66,7 +67,7 @@
       <h2 class="visually-hidden">Преимущества приложения</h2>
       <div class="features__title-wrapper">
         <p class="features__title">Устали от серости мегаполиса?</p>
-        <p class="features__title">Нам есть, что вам<br> предложить!</p>
+        <p class="features__title">Нам есть, что вам предложить!</p>
       </div>
       <div class="features__list-wrapper">
         <ul class="features__list">
@@ -86,7 +87,7 @@
       </div>
     </section>
 
-    <section class="efficiency">
+    <section class="efficiency visually-hidden">
       <h2 class="visually-hidden">Эффективность приложения</h2>
       <div class="efficiency__wrapper">
         <div class="efficiency__description">
@@ -106,7 +107,7 @@
             фотографии!</p>
         </blockquote>
         <p class="reviews__author">Николай Петров</p>
-        <p class="reviews__author-description">25 лет, водитель трамвая</p>
+        <p class="reviews__author-description visually-hidden">25 лет, водитель трамвая</p>
       </div>
       <div class="reviews__slide slider">
         <blockquote class="reviews__quote">
@@ -115,7 +116,7 @@
             фотографии!</p>
         </blockquote>
         <p class="reviews__author">Николай Петров</p>
-        <p class="reviews__author-description">25 лет, водитель трамвая</p>
+        <p class="reviews__author-description visually-hidden">25 лет, водитель трамвая</p>
       </div>
       <div class="reviews__slide slider">
         <blockquote class="reviews__quote">
@@ -124,7 +125,7 @@
             фотографии!</p>
         </blockquote>
         <p class="reviews__author">Николай Петров</p>
-        <p class="reviews__author-description">25 лет, водитель трамвая</p>
+        <p class="reviews__author-description visually-hidden">25 лет, водитель трамвая</p>
       </div>
       <div class="reviews__toggles slider__toggles">
         <button class="slider__toggle slider__toggle--current" type="button" aria-label="1">1</button>
@@ -144,15 +145,15 @@
           <thead class="table-price__head">
             <tr class="table-price__row">
               <th class="table-price__hidden"></th>
-              <th class="table-price__cell">
+              <th class="table-price__cell table-price__cell--head">
                 <span class="table-price__title-type">База</span>
                 <span class="table-price__title-price">1,99 USD</span>
               </th>
-              <th class="table-price__cell table-price__cell--hit">
+              <th class="table-price__cell table-price__cell--hit table-price__cell--head">
                 <span class="table-price__title-type">Стандарт</span>
                 <span class="table-price__title-price">3,99 USD</span>
               </th>
-              <th class="table-price__cell">
+              <th class="table-price__cell table-price__cell--head">
                 <span class="table-price__title-type">Анлим</span>
                 <span class="table-price__title-price">9,99 USD</span>
               </th>
@@ -160,7 +161,7 @@
           </thead>
           <tbody class="table-price__body">
             <tr class="table-price__row">
-              <td class="table-price__cell">Розовый фильтр</td>
+              <td class="table-price__cell table-price__cell--mobile-hidden">Розовый фильтр</td>
               <td class="table-price__cell">
                 <div class="table-price__feature">
                   <span class="table-price__hidden-text">Розовый фильтр</span>
@@ -187,7 +188,7 @@
               </td>
             </tr>
             <tr class="table-price__row">
-              <td class="table-price__cell">Смайлики</td>
+              <td class="table-price__cell table-price__cell--mobile-hidden">Смайлики</td>
               <td class="table-price__cell">
                 <div class="table-price__feature">
                   <span class="table-price__hidden-text">Смайлики</span>
@@ -214,7 +215,7 @@
               </td>
             </tr>
             <tr class="table-price__row">
-              <td class="table-price__cell">Комментарии</td>
+              <td class="table-price__cell table-price__cell--mobile-hidden">Комментарии</td>
               <td class="table-price__cell">
                 <div class="table-price__feature">
                   <span class="table-price__hidden-text">Комментарии</span>
@@ -253,7 +254,7 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts-info">
-        <h3 class="contacts-info__title">Остались вопросы?<br> Свяжитесь с нами!</h3>
+        <h3 class="contacts-info__title">Остались вопросы? Свяжитесь с нами!</h3>
         <ul class="contacts-info__list">
           <li class="contacts-info__item">
             <p class="contacts-info__connect">Звоните:</p>
@@ -265,7 +266,7 @@
           </li>
           <li class="contacts-info__item">
             <p class="contacts-info__connect">Приезжайте в гости:</p>
-            <a class="contacts-info__data" href="https://yandex.ru/maps/-/CVTgZEpc" aria-label="адрес">ул. Большая<br>Конюшенная, 19/8</a>
+            <a class="contacts-info__data" href="https://yandex.ru/maps/-/CVTgZEpc" aria-label="адрес">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
       </div>

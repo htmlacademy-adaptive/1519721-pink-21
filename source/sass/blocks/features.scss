@@ -1,0 +1,31 @@
+.features__list-wrapper {
+  background-color: $gray;
+}
+
+.features__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28.8px;
+  max-width: 280px;
+  text-align: center;
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+}
+
+.features__item {
+  max-width: 280px;
+  text-align: center;
+}
+
+.features__item-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: $black;
+}
+
+.features__item-text {
+  font-weight: 400;
+}
