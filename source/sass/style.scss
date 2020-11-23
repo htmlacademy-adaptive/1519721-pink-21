@@ -3,7 +3,7 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 
-// Blocks
+// Blocks index
 
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
@@ -17,6 +17,11 @@
 @import "blocks/page-footer.scss";
 @import "blocks/site-list.scss";
 @import "blocks/copyright.scss";
+@import "blocks/page-title.scss";
+@import "blocks/page-inner.scss";
+@import "blocks/form-feedback.scss";
+@import "blocks/button.scss";
+@import "blocks/modal-form.scss";
 
 //Support
 
