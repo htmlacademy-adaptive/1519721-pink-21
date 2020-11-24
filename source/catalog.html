@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Pink: Фотографии</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -41,12 +42,17 @@
   </header>
 
   <main class="page-main">
-    <div class="page-main__wrapper">
-      <h2 class="page-header__title">Фотографии пользователей</h2>
-    </div>
-    <div class="page-inner__wrapper">
-      <p class="page-inner__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-    </div>
+    <section class="page-title">
+      <div class="page-title__wrapper">
+        <h2 class="page-title__text">Фотографии пользователей</h2>
+      </div>
+    </section>
+    <section class="page-inner">
+      <div class="page-inner__wrapper">
+        <p class="page-inner__title page-inner__title--catalog">Взгляните на фотографии, которые выкладывают
+          пользователи! Видите, как не хватает ваших?</p>
+      </div>
+    </section>
     <section class="gallery">
       <h2 class="visually-hidden">Посты пользователей</h2>
       <article class="gallery__post">
@@ -58,7 +64,8 @@
             <div class="gallery__post-author">
               <b class="gallery__name-bold">Анна</b> <span class="gallery__post-time">(5 минут назад)</span>
             </div>
-            <p class="gallery_post-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+            <p class="gallery__post-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию
+              в перископе, задавайте свои вопросы!</p>
             <button class="gallery__heart-icon" aria-label="Нравится"></button>
             <div class="gallery__post-likes">Нравится: 215</div>
           </div>
@@ -73,9 +80,9 @@
             <div class="gallery__post-author">
               <b class="gallery__name-bold">Левон</b> <span class="gallery__post-time">(5 часов назад)</span>
             </div>
-            <p class="gallery_post-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="gallery__post-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <button class="gallery__heart-icon" aria-label="Нравится"></button>
-            <div class="photo-blog__post-likes">Нравится: 356</div>
+            <div class="gallery__post-likes">Нравится: 356</div>
           </div>
         </article>
         <article class="gallery__post">
@@ -86,9 +93,9 @@
             <div class="gallery__post-author">
               <b class="gallery__name-bold">Антон</b> <span class="gallery__post-time">(12 часов назад)</span>
             </div>
-            <p class="gallery_post-text">Соседи будут рады!</p>
+            <p class="gallery__post-text">Соседи будут рады!</p>
             <button class="gallery__heart-icon" aria-label="Нравится"></button>
-            <div class="photo-blog__post-likes">Нравится: 666</div>
+            <div class="gallery__post-likes">Нравится: 666</div>
           </div>
         </article>
         <article class="gallery__post">
@@ -99,9 +106,9 @@
             <div class="gallery__post-author">
               <b class="gallery__name-bold">Борис</b> <span class="gallery__post-time">(20 часов назад)</span>
             </div>
-            <p class="gallery_post-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="gallery__post-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <button class="gallery__heart-icon" aria-label="Нравится"></button>
-            <div class="photo-blog__post-likes">Нравится: 215</div>
+            <div class="gallery__post-likes">Нравится: 215</div>
           </div>
         </article>
         <article class="gallery__post">
@@ -112,9 +119,9 @@
             <div class="gallery__post-author">
               <b class="gallery__name-bold">Сергей</b> <span class="gallery__post-time">(25 часов назад)</span>
             </div>
-            <p class="gallery_post-text">Самая кубанская в мире!</p>
+            <p class="gallery__post-text">Самая кубанская в мире!</p>
             <button class="gallery__heart-icon" aria-label="Нравится"></button>
-            <div class="photo-blog__post-likes">Нравится: 4</div>
+            <div class="gallery__post-likes">Нравится: 4</div>
           </div>
         </article>
         <article class="gallery__post">
@@ -127,7 +134,7 @@
             </div>
             <p class="gallery_post-text">Где снег-то?</p>
             <button class="gallery__heart-icon" aria-label="Нравится"></button>
-            <div class="photo-blog__post-likes">Нравится: 150</div>
+            <div class="gallery__post-likes">Нравится: 150</div>
           </div>
         </article>
         <article class="gallery__post">
@@ -138,9 +145,9 @@
             <div class="gallery__post-author">
               <b class="gallery__name-bold">Надежда</b> <span class="gallery__post-time">(45 часов назад)</span>
             </div>
-            <p class="gallery_post-text">Всем GM и взаимные лайки!</p>
+            <p class="gallery__post-text">Всем GM и взаимные лайки!</p>
             <button class="gallery__heart-icon" aria-label="Нравится"></button>
-            <div class="photo-blog__post-likes">Нравится: 2560</div>
+            <div class="gallery__post-likes">Нравится: 2560</div>
           </div>
         </article>
       </div>
@@ -149,13 +156,20 @@
     <section class="photo-editor">
       <div class="photo-editor__wrapper">
         <h2 class="visually-hidden">Добавить новую фотографию</h2>
-        <p class="photo-editor__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="photo-editor__first-title">Затмите их всех!</p>
+        <p class="photo-editor__second-title">Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <div class="photo-editor__form-wrapper">
         <form class="form-photo" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form-photo__picture">
+            <picture class="form-photo__picture-editor">
+              <img src="https://via.placeholder.com/280x374" width="280" height="374" alt="Зимняя дорога">
+            </picture>
+          </div>
           <div class="form-photo__filters">
             <div class="form-photo__filters-buttons">
-              <button class="form-photo__filter-button form-photo__filter-button--current" type="button" aria-label="Обрезка">
+              <button class="form-photo__filter-button form-photo__filter-button--current" type="button"
+                aria-label="Обрезка">
                 <svg class="form-photo__icon" width="44" height="44"></svg>
               </button>
               <button class="form-photo__filter-button" type="button" aria-label="Заливка">
@@ -168,15 +182,15 @@
             <div class="form-photo__filter form-photo__filter--current">
               <input class="form-photo__filter-range" type="range" min="1" max="100" name="crop" value="85">
             </div>
-            <div class="form-photo__filter">
+            <div class="form-photo__filter form-photo__filter--hidden">
               <input class="form-photo__filter-range" type="range" min="1" max="100" name="fill" value="20">
             </div>
-            <div class="form-photo__filter">
+            <div class="form-photo__filter form-photo__filter--hidden">
               <input class="form-photo__filter-range" type="range" min="1" max="100" name="contrast" value="20">
             </div>
           </div>
           <div class="form-photo__buttons">
-            <button class="form-photo__button button button--red" type="submit">Запостить</button>
+            <button class="form-photo__button button button--pink" type="submit">Запостить</button>
             <button class="form-photo__button button button--gray mobile-hidden" type="reset">Отмена</button>
           </div>
         </form>
@@ -207,7 +221,8 @@
     </div>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">HTML
+        Academy</a>
     </div>
   </footer>
 </body>

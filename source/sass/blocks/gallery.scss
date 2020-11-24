@@ -1,0 +1,24 @@
+.gallery__post-content {
+  background-color: $silver;
+}
+
+.gallery__name-bold {
+  font-weight: 700;
+}
+
+.gallery__post-time {
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.gallery__post-text {
+  max-width: 253px;
+  font-weight: 400;
+}
+
+.gallery__post-likes {
+  color: $pink;
+  font-weight: 400;
+  text-transform: uppercase;
+}

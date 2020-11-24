@@ -1,0 +1,30 @@
+.form-photo__filter--hidden {
+  display: none;
+}
+
+.form-photo__filter-range {
+  appearance: none;
+  width: 240px;
+  height: 2px;
+  background-color: $dark-blue;
+  outline: none;
+  margin-bottom: 34px;
+}
+
+.form-photo__filter-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  background-color: $white;
+  border: solid 2px $pink;
+  border-radius: 100%;
+}
+
+.form-photo__button {
+  display: block;
+}
+
+.form-photo__button:first-child {
+  margin-bottom: 12px;
+}
