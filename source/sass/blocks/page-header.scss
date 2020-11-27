@@ -1,7 +1,42 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   background-color: $bg-color-header;
   color: $white;
   text-transform: uppercase;
   line-height: 32px;
   font-weight: bold;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 25% 75%;
+  }
+}
+
+.page-header__wrapper {
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    height: 110px;
+  }
+}
+
+.page-header__menu {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__logo {
+  margin: 22px 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 27px 0 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 27px 0 0 130px;
+  }
 }
