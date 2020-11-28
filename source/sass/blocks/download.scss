@@ -1,5 +1,21 @@
-.download__wrapper {
+.download {
   background-color: $the-darkest-blue;
+}
+
+.download__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: auto;
+  width: $mobile-width;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .download__header {
@@ -10,7 +26,7 @@
   display: block;
   margin: auto; */
   display: flex;
-  justify-content: center;
+  align-content: center;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;

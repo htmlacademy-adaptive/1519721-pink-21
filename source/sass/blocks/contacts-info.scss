@@ -3,6 +3,16 @@
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  width: $mobile-width;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .contacts-info__title {

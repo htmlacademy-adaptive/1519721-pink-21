@@ -1,3 +1,10 @@
+.main-nav {
+  @media (min-width: $desktop-width) {
+    width: 620px;
+    margin-left: 400px;
+  }
+}
+
 .main-nav__wrapper {
   margin: 0 auto;
   display: flex;
@@ -9,6 +16,16 @@
 }
 
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
+  width: 320px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 620px;
+  }
 }

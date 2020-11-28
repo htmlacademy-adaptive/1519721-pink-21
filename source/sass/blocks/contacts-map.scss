@@ -1,11 +1,12 @@
 .contacts-map {
   height: 200px;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     height: 374px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 793px;
+    height: 502px;
   }
 }
