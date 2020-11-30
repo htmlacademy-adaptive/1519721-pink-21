@@ -1,14 +1,30 @@
-.page-title__wrapper {
+/*.page-title__wrapper {
   background-image: url("../img/back-mobile.png");
   background-repeat: no-repeat;
   padding: 36px 0 51px 0;
   margin-bottom: 30px;
+} */
+.page-title {
+  background-color: $the-darkest-blue;
+  padding: 20px 0;
 }
 
 .page-title__text {
+  margin: auto;
   color: $white;
+  font-size: 24px;
   line-height: 32.68px;
   max-width: 228px;
   text-align: center;
   font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    max-width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 747px;
+  }
 }

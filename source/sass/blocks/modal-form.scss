@@ -1,8 +1,26 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: $mobile-width;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+  }
+}
+
 .modal-form__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   color: $black;
+  text-align: center;
 }
 
 .modal-form__text {
@@ -12,9 +30,28 @@
 
 .modal-form__text--close-window {
   max-width: 266px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 360px;
+  }
 }
 
 .modal-form__bottom--silver {
   background-color: $silver;
   padding: 52px 0 52px 0;
+  width: 320px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-form__bottom {
+    background-color: $silver;
+    width: 780px;
+    text-align: center;
+    padding: 52px 0 52px 0;
+  }
 }
