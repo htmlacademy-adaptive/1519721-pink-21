@@ -1,3 +1,18 @@
-.table-price__head {
-  background-color: $white;
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px 50px 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    padding: 30px 5px 50px 5px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }

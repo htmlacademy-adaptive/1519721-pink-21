@@ -1,3 +1,38 @@
 .price {
   background-color: $gray;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.price__table {
+  width: 840px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    transform: none;
+    margin: auto;
+    width: 615px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.price__toggles {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 390px;
+  padding-bottom: 10px;
+  justify-content: center;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

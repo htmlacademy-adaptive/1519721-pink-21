@@ -3,42 +3,47 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип сайта Пинк»">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" aria-label="Главная href="#>
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html" aria-label="Фотографии">
-              Фотографии
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html" aria-label="Конкурс">
-              Конкурс
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru" aria-label="HTML Academy">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="../img/pink.svg" width="74" height="23" alt="Логотип сайта Пинк»">
+        </a>
+        <div class="page-header__menu">
+          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
       </div>
-    </nav>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" aria-label="Главная">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html" aria-label="Фотографии">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html" aria-label="Конкурс">
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru" aria-label="HTML Academy">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
   </header>
 
   <main class="page-main">
@@ -53,13 +58,19 @@
             Взгляните на жизнь иначе!
           </p>
         </header>
-        <a class="button download__download-link" href="http://www.apple.com/itunes/working-itunes/market/" aria-label="Скачать приложение">Скачать приложение</a>
-        <ul class="download__os-list">
-          <li><a class="download__os-item download__os-item--apple" href="http://www.apple.com/itunes/working-itunes/market/" aria-label="скачать для iOS">Apple</a></li>
-          <li><a class="download__os-item download__os-item--android" href="https://play.google.com/store/apps" aria-label="скачать для Android">Android</a></li>
-          <li><a class="download__os-item download__os-item--widows" href="https://www.microsoft.com/ru-ru/store/apps" aria-label="скачать для Windows">Windows</a></li>
-        </ul>
-        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, Mac OS, Windows 8</p>
+        <div class="download__download-block">
+          <a class="button download__download-link" href="http://www.apple.com/itunes/working-itunes/market/"
+            aria-label="Скачать приложение">Скачать приложение</a>
+          <ul class="download__os-list">
+            <li><a class="download__os-item download__os-item--apple"
+                href="http://www.apple.com/itunes/working-itunes/market/" aria-label="скачать для iOS">Apple</a></li>
+            <li><a class="download__os-item download__os-item--android" href="https://play.google.com/store/apps"
+                aria-label="скачать для Android">Android</a></li>
+            <li><a class="download__os-item download__os-item--windows"
+                href="https://www.microsoft.com/ru-ru/store/apps" aria-label="скачать для Windows">Windows</a></li>
+          </ul>
+          <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, Mac OS, Windows 8</p>
+        </div>
       </div>
     </section>
 
@@ -67,32 +78,36 @@
       <h2 class="visually-hidden">Преимущества приложения</h2>
       <div class="features__title-wrapper">
         <p class="features__title">Устали от серости мегаполиса?</p>
-        <p class="features__title">Нам есть, что вам предложить!</p>
+        <p class="features__title">Нам есть, что вам<br class="features__title-hidden"> предложить!</p>
       </div>
       <div class="features__list-wrapper">
         <ul class="features__list">
           <li class="features__item  features__item--first">
             <h3 class="features__item-title">Поднимает настроение</h3>
-            <p class="features__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <p class="features__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              несколько кликов!</p>
           </li>
           <li class="features__item  features__item--second">
             <h3 class="features__item-title">Меняет мир вокруг</h3>
-            <p class="features__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <p class="features__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+              усилить эффект</p>
           </li>
           <li class="features__item  features__item--third">
             <h3 class="features__item-title">Заводит новых друзей</h3>
-            <p class="features__item-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            <p class="features__item-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите
+              новых</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="efficiency visually-hidden">
+    <section class="efficiency">
       <h2 class="visually-hidden">Эффективность приложения</h2>
-      <div class="efficiency__wrapper">
+      <div class="efficiency__wrapper efficiency__visually-hidden">
         <div class="efficiency__description">
           <h3 class="efficiency__title">Эффект на 24 часа!</h3>
-          <p class="efficiency__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <p class="efficiency__text">Британские ученые провели исследования и доказали, что положительный эффект от
+            использования приложения длится целые сутки!</p>
           <a class="efficiency__link" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
@@ -102,14 +117,14 @@
       <h2 class="visually-hidden">Отзывы</h2>
       <div class="reviews__slide slider reviews__slide--current">
         <blockquote class="reviews__quote">
-          <p class="reviews__quote-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+          <p class="reviews__quote-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
             привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-            фотографии!</p>
+            фотографии!»</p>
         </blockquote>
         <p class="reviews__author">Николай Петров</p>
-        <p class="reviews__author-description visually-hidden">25 лет, водитель трамвая</p>
+        <p class="reviews__author-description reviews__visually-hidden">25 лет, водитель трамвая</p>
       </div>
-      <div class="reviews__slide slider">
+      <div class="reviews__slide slider visually-hidden">
         <blockquote class="reviews__quote">
           <p class="reviews__quote-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на
             привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
@@ -118,7 +133,7 @@
         <p class="reviews__author">Николай Петров</p>
         <p class="reviews__author-description visually-hidden">25 лет, водитель трамвая</p>
       </div>
-      <div class="reviews__slide slider">
+      <div class="reviews__slide slider visually-hidden">
         <blockquote class="reviews__quote">
           <p class="reviews__quote-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на
             привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
@@ -161,7 +176,7 @@
           </thead>
           <tbody class="table-price__body">
             <tr class="table-price__row">
-              <td class="table-price__cell table-price__cell--mobile-hidden">Розовый фильтр</td>
+              <td class="table-price__cell">Розовый фильтр</td>
               <td class="table-price__cell">
                 <div class="table-price__feature">
                   <span class="table-price__hidden-text">Розовый фильтр</span>
@@ -178,7 +193,7 @@
                   </span>
                 </div>
               </td>
-              <td class="table-price__cell">
+              <td class="table-price__cell table-price__cell--mobile-hidden">
                 <div class="table-price__feature">
                   <span class="table-price__hidden-text">Розовый фильтр</span>
                   <span class="table-price__feature-value table-price__feature-value--true">
@@ -188,7 +203,7 @@
               </td>
             </tr>
             <tr class="table-price__row">
-              <td class="table-price__cell table-price__cell--mobile-hidden">Смайлики</td>
+              <td class="table-price__cell">Смайлики</td>
               <td class="table-price__cell">
                 <div class="table-price__feature">
                   <span class="table-price__hidden-text">Смайлики</span>
@@ -205,7 +220,7 @@
                   </span>
                 </div>
               </td>
-              <td class="table-price__cell">
+              <td class="table-price__cell table-price__cell--mobile-hidden">
                 <div class="table-price__feature">
                   <span class="table-price__hidden-text">Смайлики</span>
                   <span class="table-price__feature-value table-price__feature-value--true">
@@ -215,7 +230,7 @@
               </td>
             </tr>
             <tr class="table-price__row">
-              <td class="table-price__cell table-price__cell--mobile-hidden">Комментарии</td>
+              <td class="table-price__cell">Комментарии</td>
               <td class="table-price__cell">
                 <div class="table-price__feature">
                   <span class="table-price__hidden-text">Комментарии</span>
@@ -232,7 +247,7 @@
                   </span>
                 </div>
               </td>
-              <td class="table-price__cell">
+              <td class="table-price__cell table-price__cell--mobile-hidden">
                 <div class="table-price__feature">
                   <span class="table-price__hidden-text">Комментарии</span>
                   <span class="table-price__feature-value table-price__feature-value--true">
@@ -243,11 +258,11 @@
             </tr>
           </tbody>
         </table>
-        <div class="price__toggles slider__toggles">
-          <button class="slider__toggle" type="button" aria-label="1">1</button>
-          <button class="slider__toggle slider__toggle--current" type="button" aria-label="2">2</button>
-          <button class="slider__toggle type=" button" aria-label="3">3</button>
-        </div>
+      </div>
+      <div class="price__toggles slider__toggles">
+        <button class="slider__toggle" type="button" aria-label="1">1</button>
+        <button class="slider__toggle slider__toggle--current" type="button" aria-label="2">2</button>
+        <button class="slider__toggle type=" button" aria-label="3">3</button>
       </div>
     </section>
 
@@ -266,14 +281,15 @@
           </li>
           <li class="contacts-info__item">
             <p class="contacts-info__connect">Приезжайте в гости:</p>
-            <a class="contacts-info__data" href="https://yandex.ru/maps/-/CVTgZEpc" aria-label="адрес">ул. Большая Конюшенная, 19/8</a>
+            <a class="contacts-info__data" href="https://yandex.ru/maps/-/CVTgZEpc" aria-label="адрес">ул. Большая
+              Конюшенная, 19/8</a>
           </li>
         </ul>
       </div>
       <div class="contacts-map">
         <iframe
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A98841b6882fea8d98de35c265bd78f3b783a22ea09eed6354a693f2cff4999ad&amp;source=constructor"
-          width="100%" height="502" frameborder="0"></iframe>
+          width="100%" height="100%" frameborder="0"></iframe>
       </div>
     </section>
   </main>
@@ -301,8 +317,10 @@
     </div>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">HTML
+        Academy</a>
     </div>
   </footer>
 </body>
+
 </html>

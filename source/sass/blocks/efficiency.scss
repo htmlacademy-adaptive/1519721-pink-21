@@ -1,0 +1,60 @@
+@media (min-width: $desktop-width) {
+  .efficiency {
+    background-color: $silver;
+  }
+}
+
+.efficiency__visually-hidden {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    text-align: left;
+    margin-left: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .efficiency__title {
+    max-width: 170px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .efficiency__text {
+    max-width: 305px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .efficiency__text {
+    max-width: 534px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .efficiency__title {
+    line-height: 30px;
+    max-width: 300px;
+  }
+
+  .efficiency__link {
+    color: $pink;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+
+.efficiency__link {
+  color: $pink;
+}
+
+.efficiency__title {
+  color: $black;
+}
