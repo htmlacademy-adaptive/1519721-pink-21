@@ -1,5 +1,9 @@
 .form-photo__filter--hidden {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .form-photo__filter-range {
@@ -27,4 +31,63 @@
 
 .form-photo__button:first-child {
   margin-bottom: 12px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+.form-photo__filters-buttons {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .form-photo__filter-button {
+    margin-top: 5px;
+  }
+
+  .form-photo__filters {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+
+  .form-photo__filter-range {
+    width: 202px;
+    margin-bottom: 40px;
+  }
+
+  .form-photo__filter-range:nth-child(1) {
+    margin-top: 35px;
+  }
+
+  .form-photo__buttons {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-photo__filter-range {
+    width: 288px;
+  }
+
+  .form-photo__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
 }
