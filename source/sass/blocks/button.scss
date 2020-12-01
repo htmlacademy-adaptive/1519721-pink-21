@@ -7,9 +7,13 @@
   background-color: $green;
   border: 2px solid $green;
   border-radius: 1px;
-  padding: 21px 0 21px 0;
+  padding: 13px 0 13px 0;
   box-sizing: border-box;
   width: 276px;
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+  }
 }
 
 .button--pink {
