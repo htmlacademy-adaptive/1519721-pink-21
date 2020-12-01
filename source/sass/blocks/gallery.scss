@@ -27,7 +27,6 @@
 }
 
 .gallery__post-wrapper--panorama-picture {
-
   @media (min-width: $tablet-width) {
     width: 620px;
   }
@@ -63,12 +62,11 @@
   padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    width: 300px
+    width: 300px;
   }
 }
 
 .gallery__post-content--panorama {
-
   @media (min-width: $tablet-width) {
     width: 620px;
     flex-direction: row;
