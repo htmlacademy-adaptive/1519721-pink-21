@@ -28,6 +28,10 @@
 
 .page-inner__title--catalog {
   max-width: 250px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 570px;
+  }
 }
 
 .page-inner__form-feedback {
