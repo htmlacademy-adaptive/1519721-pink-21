@@ -1,12 +1,53 @@
 .contacts-map {
+  position: relative;
   height: 200px;
-  padding-top: 40px;
+  padding-top: 29px;
 
   @media (min-width: $tablet-width) {
     height: 374px;
+    padding-top: 19px;
   }
 
   @media (min-width: $desktop-width) {
     height: 502px;
+    padding-top: 15px;
+  }
+}
+
+
+.contacts-map::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  display: block;
+  width: 100%;
+  height: 41px;
+  z-index: 20;
+  background: url("../img/bg-triangle-white-footer.svg") no-repeat center -180px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-map::before {
+    content: '';
+    position: absolute;
+    top: -37px;
+    display: block;
+    width: 100%;
+    height: 123px;
+    z-index: 20;
+    background: url("../img/triangle-white-footer.svg") no-repeat center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-map::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    display: block;
+    width: 100%;
+    height: 123px;
+    z-index: 20;
+    background: url("../img/triangle-white-footer-desktop.svg") no-repeat center;
   }
 }

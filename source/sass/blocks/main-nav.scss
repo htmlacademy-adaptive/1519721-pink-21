@@ -1,7 +1,7 @@
 .main-nav {
   @media (min-width: $desktop-width) {
     width: 620px;
-    margin-left: 400px;
+    margin: 33px 0 35px 171px;
   }
 }
 
@@ -9,10 +9,6 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
-
-  @media (min-width: $desktop-width) {
-    margin-right: 130px;
-  }
 }
 
 .main-nav__list {
@@ -27,5 +23,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 620px;
+  }
+}
+
+@media (max-width: 959px) {
+  .main-nav--closed {
+    display: none;
   }
 }
