@@ -110,6 +110,10 @@
   height: 3px;
   background-color: $white;
   box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
+
+  @media (min-width: $tablet-width) {
+    top: 17px;
+  }
 }
 
 .page-header__toggle--closed:hover::before {

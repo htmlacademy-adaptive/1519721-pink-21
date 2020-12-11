@@ -112,7 +112,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin:auto;
+    margin: auto;
   }
 }
 
@@ -141,7 +141,6 @@
   @media (min-width: $desktop-width) {
     background-position: -6px 0;
   }
-
 }
 
 .table-price__cell--hit::before {
