@@ -3,6 +3,16 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  padding-bottom: 47px;
+  // background-image: url("../img/bg-triangle-white.svg");
+  background-image: url("../img/bg-triangle-white-version2.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 100% 0;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 73px;
+  }
 }
 
 .price__table {
@@ -10,25 +20,24 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  padding: 20px;
+  padding: 20px 0 20px 0;
 
   @media (min-width: $tablet-width) {
     position: static;
     transform: none;
     margin: auto;
-    width: 615px;
+    width: 622px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 940px;
+    width: 942px;
   }
 }
 
 .price__toggles {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 390px;
-  padding-bottom: 10px;
+  padding-top: 425px;
   justify-content: center;
   margin: auto;
 

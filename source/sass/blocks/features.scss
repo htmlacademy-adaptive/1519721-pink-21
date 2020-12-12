@@ -1,5 +1,10 @@
 .features__list-wrapper {
   background-color: $silver;
+  // background-image: url("../img/bg-triangle-white.svg");
+  background-image: url("../img/bg-triangle-white-version2.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 0;
 }
 
 .features__title {
@@ -23,6 +28,21 @@
     font-size: 50px;
     line-height: 68.09px;
     max-width: 940px;
+    margin-bottom: 61px;
+  }
+}
+
+.features__title:first-child {
+  margin-top: 40px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 47px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 63px;
   }
 }
 
@@ -30,6 +50,10 @@
   list-style: none;
   padding: 0;
   margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 324px;
+  }
 }
 
 .features__item {
@@ -41,8 +65,23 @@
   margin: auto;
 }
 
+.features__item--first {
+  margin-top: 35px;
+  padding-top: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
 .features__item:last-child {
   max-width: 270px;
+  padding-bottom: 302px;
 }
 
 @media (min-width: $tablet-width) {
@@ -54,14 +93,17 @@
 
   .features__item:last-child {
     max-width: 310px;
+    padding-bottom: 29px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .features__item {
-    margin: auto;
     text-align: center;
     max-width: 252px;
+    margin-top: 0;
+    margin-left: 25px;
+    margin-right: 48px;
   }
 
   .features__item:nth-child(2) {
@@ -69,8 +111,9 @@
   }
 
   .features__item:last-child {
-    margin-top: 0;
     max-width: 240px;
+    margin-left: 31px;
+    margin-right: 20px;
   }
 
   .features__list {
@@ -85,18 +128,50 @@
   font-size: 18px;
   font-weight: 700;
   color: $black;
+  margin-bottom: 13px;
 
   @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 30px;
+    margin-bottom: 21px;
   }
 }
 
 .features__item-text {
   font-weight: 400;
+  margin-top: 0;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+.features__item-text--second {
+  margin-top: -1px;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+  }
+}
+
+.features__tablet-br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.features__desktop-br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
