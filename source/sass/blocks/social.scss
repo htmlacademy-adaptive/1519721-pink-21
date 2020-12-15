@@ -10,6 +10,10 @@
     margin-top: 7px;
     margin-left: 6px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column-gap: 2px;
+  }
 }
 
 .social__link {
