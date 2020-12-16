@@ -19,9 +19,24 @@
 
 .page-header__wrapper {
   height: 69px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 110px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 150px;
+  }
+}
+
+.page-header__container {
+  height: 69px;
   display: flex;
   justify-content: space-between;
   width: $mobile-width;
+  margin: auto;
 
   @media (min-width: $tablet-width) {
     height: 110px;

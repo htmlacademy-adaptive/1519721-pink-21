@@ -64,12 +64,13 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
-    margin-top: 18px;
+    margin-top: 16px;
     padding-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: -1px;
+    margin-top: 18px;
   }
 }
 
@@ -87,23 +88,22 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    padding: 13px 64px 14px 18px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding: 14px 0 14px 20px;
+    padding: 14px 62px 14px 19px;
   }
 }
 
 .form-feedback__input:hover {
   border: 2px solid $dark-blue;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .form-feedback__input:focus,
 .form-feedback__input:active {
   border: 2px solid $pink;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .form-feedback__fieldset--platform,
@@ -176,6 +176,7 @@
 
   .form-feedback__label--contacts {
     margin-left: 20px;
+    margin-top: 11px;
   }
 }
 
@@ -209,7 +210,6 @@
 
   .form-feedback__wrapper--platform {
     order: -2;
-    padding-top: 18px;
   }
 
   .form-feedback__wrapper--contacts {
@@ -229,6 +229,7 @@
   .form-feedback__wrapper--platform {
     margin-left: 40px;
     margin-bottom: 19px;
+    padding-top: 19px;
   }
 
   .form-feedback__wrapper--name {
@@ -347,13 +348,11 @@
 }
 
 .form-feedback__label-checkbox:hover::before {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border: 2px solid $dark-blue;
 }
 
 .form-feedback__label-checkbox:active::before,
 .form-feedback__label-checkbox:focus::before {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border: 2px solid $pink;
 }
 
@@ -373,6 +372,7 @@
   &:focus + .form-feedback__label-checkbox {
     outline: 1px dashed $pink;
     outline-offset: 2px;
+    display: inline-block;
   }
 
   &:checked + .form-feedback__label-checkbox {
@@ -429,6 +429,7 @@
   &:focus + .form-feedback__label-radio {
     outline: 1px dashed $pink;
     outline-offset: 2px;
+    display: inline-block;
   }
 
   &:checked + .form-feedback__label-radio {
@@ -572,9 +573,9 @@
     content: "";
     position: absolute;
     top: 2px;
-    right: 2px;
+    right: 0;
     width: 60px;
-    height: 59px;
+    height: 57px;
     background-color: $lightgray;
     background-repeat: no-repeat;
     background-position: center;
@@ -586,5 +587,12 @@
 
   .form-feedback__name-item--email::after {
     background-image: url("../img/mail-icon.svg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-feedback__name-item--contacts::after {
+    height: 58px;
+    right: 2px;
   }
 }

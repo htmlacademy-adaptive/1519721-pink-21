@@ -10,6 +10,7 @@
   padding: 13px 0 13px 0;
   box-sizing: border-box;
   width: 278px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 299px;
@@ -48,6 +49,7 @@
   color: $pink;
   width: 280px;
   padding: 21px 0 21px 0;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     width: 183px;
@@ -65,6 +67,7 @@
   color: $dark-blue;
   width: 280px;
   padding: 21px 0 21px 0;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     width: 183px;

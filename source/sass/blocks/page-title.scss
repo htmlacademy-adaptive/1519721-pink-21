@@ -2,18 +2,21 @@
   background-image: url("../img/back-mobile.png");
   background-repeat: no-repeat;
   background-position: center top;
-  padding: 36px 0 46px 0;
-  margin-top: -20px;
+  background-size: cover;
+  padding: 16px 0 46px 0;
+  margin-top: 0;
+
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/back-tablet.png");
     background-position: center top;
-    padding-bottom: 61px;
+    padding: 35px 0 61px 0;
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/back-desktop.png");
-    padding-bottom: 88px;
+    padding-bottom: 90px;
+    margin-top: 0;
   }
 }
 
@@ -30,7 +33,7 @@
   max-width: 228px;
   text-align: center;
   font-weight: 300;
-  margin-top: 61px;
+  margin-top: 81px;
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
