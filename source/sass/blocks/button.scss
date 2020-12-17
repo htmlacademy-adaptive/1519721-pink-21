@@ -9,11 +9,34 @@
   border-radius: 1px;
   padding: 13px 0 13px 0;
   box-sizing: border-box;
-  width: 276px;
+  width: 278px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    width: 299px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 296px;
   }
+}
+
+.button--green:hover {
+  background-color: $dark-green;
+  border: 2px solid $dark-green;
+}
+
+.button--green:focus,
+.button--green:active {
+  background-color: $dark-green;
+  border: 2px solid $dark-green;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--green:disabled {
+  background-color: $lightgray;
+  border: 2px solid $lightgray;
 }
 
 .button--pink {
@@ -26,6 +49,7 @@
   color: $pink;
   width: 280px;
   padding: 21px 0 21px 0;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     width: 183px;
@@ -43,6 +67,7 @@
   color: $dark-blue;
   width: 280px;
   padding: 21px 0 21px 0;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     width: 183px;

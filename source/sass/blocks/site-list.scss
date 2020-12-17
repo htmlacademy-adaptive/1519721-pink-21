@@ -2,7 +2,7 @@
   list-style: none;
   text-align: center;
   margin: auto;
-  width: 320px;
+  width: 100%;
 
   @media (min-width: $desktop-width) {
     width: 620px;
@@ -45,15 +45,17 @@
 }
 
 .site-list__item {
-  width: 320px;
+  width: 100%;
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
+    padding-bottom: 10px;
+    padding-top: 12px;
   }
 }
 
@@ -64,5 +66,9 @@
 
   .site-list__item:nth-child(3) {
     margin-left: 5px;
+  }
+
+  .site-list__item--active {
+    border-bottom: 2px solid $white;
   }
 }

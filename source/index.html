@@ -11,11 +11,13 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper page-header__wrapper--closed">
-      <a class="page-header__logo">
-        <img src="../img/pink.svg" width="74" height="23" alt="Логотип сайта Пинк»">
-      </a>
-      <div class="page-header__menu">
-        <button class="page-header__toggle page-header__toggle--closed" type="button" aria-label="Меню"></button>
+      <div class="page-header__container">
+        <a class="page-header__logo">
+          <img src="img/pink.svg" width="74" height="23" alt="Логотип сайта Пинк»">
+        </a>
+        <div class="page-header__menu">
+          <button class="page-header__toggle page-header__toggle--closed" type="button" aria-label="Меню"></button>
+        </div>
       </div>
     </div>
     <nav class="main-nav main-nav--closed">
@@ -50,14 +52,16 @@
     <h1 class="visually-hidden">Пинк - мобильное приложение для раскрашивания серых будней в розовый цвет!</h1>
     <section class="download">
       <div class="download__wrapper">
-        <header class="download__header">
-          <h2 class="visually-hidden">
-            Скачать приложение
-          </h2>
-          <p class="download__slogan">
-            Взгляните на жизнь иначе!
-          </p>
-        </header>
+        <div class="download__wrapper-header menu-margin">
+          <header class="download__header">
+            <h2 class="visually-hidden">
+              Скачать приложение
+            </h2>
+            <p class="download__slogan">
+              Взгляните на жизнь иначе!
+            </p>
+          </header>
+        </div>
         <div class="download__download-block-wrapper">
           <div class="download__download-block">
             <a class="button download__download-link" href="http://www.apple.com/itunes/working-itunes/market/"
@@ -86,7 +90,8 @@
         <ul class="features__list">
           <li class="features__item  features__item--first">
             <h3 class="features__item-title features__item-title--first">Поднимает настроение</h3>
-            <p class="features__item-text features__item-text--first">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+            <p class="features__item-text features__item-text--first">Приложение позволит вам победить осеннюю хандру и
+              депрессию буквально в
               несколько кликов!</p>
           </li>
           <li class="features__item  features__item--second">
@@ -97,7 +102,8 @@
           </li>
           <li class="features__item  features__item--third">
             <h3 class="features__item-title features__item-title--third">Заводит новых друзей</h3>
-            <p class="features__item-text features__item-text--third">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+            <p class="features__item-text features__item-text--third">Ставьте лайки, комментируйте, делитесь
+              фотографиями с друзьями и заводите
               новых</p>
           </li>
         </ul>
@@ -109,7 +115,8 @@
       <div class="efficiency__wrapper efficiency__visually-hidden">
         <div class="efficiency__description">
           <h3 class="efficiency__title">Эффект<br class="efficiency__tablet-br"> на 24 часа!</h3>
-          <p class="efficiency__text">Британские ученые провели исследования и доказали,<br class="efficiency__desktop-br"> что положительный эффект<br class="efficiency__tablet-br"> от
+          <p class="efficiency__text">Британские ученые провели исследования и доказали,<br
+              class="efficiency__desktop-br"> что положительный эффект<br class="efficiency__tablet-br"> от
             использования приложения длится целые сутки!</p>
           <a class="efficiency__link" href="#">Узнать больше об исследовании</a>
         </div>
@@ -151,7 +158,8 @@
         <button class="slider__toggle" type="button" aria-label="3"></button>
       </div>
       <div class="reviews__slider-nav slider-nav">
-        <button class="slider-nav__toggle slider-nav__toggle--prev" type="button" aria-label="Предыдущий отзыв"></button>
+        <button class="slider-nav__toggle slider-nav__toggle--prev" type="button"
+          aria-label="Предыдущий отзыв"></button>
         <button class="slider-nav__toggle slider-nav__toggle--next" type="button" aria-label="Следующий отзыв"></button>
       </div>
     </section>
