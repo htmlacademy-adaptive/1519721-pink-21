@@ -36,6 +36,10 @@
   @media (min-width: $tablet-width) {
     max-width: 570px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 620px;
+  }
 }
 
 .page-inner__form-feedback {
