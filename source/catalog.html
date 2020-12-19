@@ -10,15 +10,17 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип сайта Пинк»">
-      </a>
-      <div class="page-header__menu">
-        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <div class="page-header__wrapper page-header__wrapper--closed">
+      <div class="page-header__container">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/pink.svg" width="74" height="23" alt="Логотип сайта Пинк»">
+        </a>
+        <div class="page-header__menu">
+          <button class="page-header__toggle page-header__toggle--closed" type="button" aria-label="Меню"></button>
+        </div>
       </div>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -26,12 +28,12 @@
               Главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__link" href="catalog.html" aria-label="Фотографии">
               Фотографии
             </a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a class="site-list__link" href="form.html" aria-label="Конкурс">
               Конкурс
             </a>
@@ -47,9 +49,9 @@
   </header>
 
   <main class="page-main">
-    <section class="page-title">
+    <section class="page-title menu-margin">
       <div class="page-title__wrapper">
-        <h2 class="page-title__text">Фотографии пользователей</h2>
+        <h2 class="page-title__text page-title__text--catalog">Фотографии<br> пользователей</h2>
       </div>
     </section>
     <section class="page-inner">
@@ -69,12 +71,13 @@
             <div class="gallery__post-author gallery__post-author--panorama">
               <b class="gallery__name-bold">Анна</b> <span class="gallery__post-time">(5 минут назад)</span>
             </div>
-            <p class="gallery__post-text gallery__post-text--panorama">Прыгать или нет? Напишите в коментарии свой совет
-              и смотрите прямую транслацию
+            <p class="gallery__post-text gallery__post-text--panorama">Прыгать или нет? Напишите в комментарии свой
+              совет
+              и<br class="gallery__text-br"> смотрите прямую транслацию
               в перископе, задавайте свои вопросы!</p>
             <div class="gallery__like gallery__like--panorama">
               <button class="gallery__heart-icon" aria-label="Нравится"></button>
-              <div class="gallery__post-likes">Нравится: 215</div>
+              <div class="gallery__post-likes gallery__post-likes--panorama">Нравится: 215</div>
             </div>
           </div>
         </div>
@@ -125,7 +128,7 @@
             </div>
           </div>
         </article>
-        <article class="gallery__post">
+        <article class="gallery__post gallery__post--margin">
           <picture class="gallery__post-picture">
             <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография овощной ярмарки">
           </picture>
@@ -191,13 +194,19 @@
               <div class="form-photo__filters-buttons">
                 <button class="form-photo__filter-button form-photo__filter-button--current" type="button"
                   aria-label="Обрезка">
-                  <svg class="form-photo__icon" width="44" height="44"></svg>
+                  <svg class="form-photo__icon" width="44" height="44">
+                    <rect fill="pink" width="44" height="44">
+                  </svg>
                 </button>
                 <button class="form-photo__filter-button" type="button" aria-label="Заливка">
-                  <svg class="form-photo__icon" width="48" height="43"></svg>
+                  <svg class="form-photo__icon" width="48" height="43">
+                    <rect fill="pink" width="48" height="43"></rect>
+                  </svg>
                 </button>
                 <button class="form-photo__filter-button" type="button" aria-label="Контрастность">
-                  <svg class="form-photo__icon" width="32" height="32"></svg>
+                  <svg class="form-photo__icon" width="32" height="32">
+                    <rect fill="pink" width="32" height="32"></rect>
+                  </svg>
                 </button>
               </div>
               <div class="form-photo__filters-range">
@@ -205,19 +214,19 @@
                   <div class="form-photo__icon-wrapper">
                     <svg class="form-photo__icon" width="22" height="22"></svg>
                   </div>
-                  <input class="form-photo__filter-range" type="range" min="1" max="100" name="crop" value="85">
+                  <input class="form-photo__filter-range" type="range" min="1" max="100" name="crop" value="78">
                 </div>
                 <div class="form-photo__filter form-photo__filter--hidden">
                   <div class="form-photo__icon-wrapper">
                     <svg class="form-photo__icon" width="24" height="22"></svg>
                   </div>
-                  <input class="form-photo__filter-range" type="range" min="1" max="100" name="fill" value="20">
+                  <input class="form-photo__filter-range" type="range" min="1" max="100" name="fill" value="13">
                 </div>
                 <div class="form-photo__filter form-photo__filter--hidden">
                   <div class="form-photo__icon-wrapper">
                     <svg class="form-photo__icon" width="16" height="16"></svg>
                   </div>
-                  <input class="form-photo__filter-range" type="range" min="1" max="100" name="contrast" value="20">
+                  <input class="form-photo__filter-range" type="range" min="1" max="100" name="contrast" value="50">
                 </div>
               </div>
             </div>
@@ -241,23 +250,23 @@
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com" aria-label="Twitter">Twitter</a>
+          <a class="social__link social__link--twitter" href="https://twitter.com" aria-label="Twitter"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com"
-            aria-label="Facebook">Facebook</a>
+          <a class="social__link social__link--facebook" href="https://www.facebook.com" aria-label="Facebook"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com" aria-label="Youtube">YouTube</a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com" aria-label="Youtube"></a>
         </li>
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">HTML
-        Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
     </div>
   </footer>
+
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

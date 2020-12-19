@@ -47,3 +47,15 @@
     margin-top: 134px;
   }
 }
+
+.page-title__text--catalog {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}

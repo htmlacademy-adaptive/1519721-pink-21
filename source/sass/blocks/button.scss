@@ -48,12 +48,27 @@
   line-height: 18px;
   color: $pink;
   width: 280px;
-  padding: 21px 0 21px 0;
+  padding: 17px 0 17px 0;
   cursor: pointer;
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 183px;
   }
+}
+
+.button--pink:hover,
+.button--pink:focus {
+  background-color: $pink;
+  color: $white;
+}
+
+.button--pink:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button--gray {
@@ -66,10 +81,24 @@
   line-height: 18px;
   color: $dark-blue;
   width: 280px;
-  padding: 21px 0 21px 0;
+  padding: 15px 0 17px 0;
   cursor: pointer;
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 183px;
   }
+}
+
+.button--gray:hover {
+  opacity: 0.3;
+}
+
+.button--gray:active {
+  color: $white;
+  background-color: $dark-blue;
 }
