@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 147px;
+    padding-top: 154px;
   }
 }
 
@@ -27,20 +27,23 @@
 }
 
 .table-price__title-price {
+  display: inline-block;
   color: $white;
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
   text-transform: uppercase;
+  margin: -1px 0 3px 0;
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
+    margin: 3px 0 3px 0;
   }
 }
 
 .table-price__cell {
   background-color: $white;
-  padding: 15px 20px 12px 20px;
+  padding: 12px 17px 16px 21px;
   width: 240px;
   text-transform: uppercase;
 
@@ -51,7 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 20px 15px 20px;
+    padding: 13px 20px 15px 20px;
     width: 232px;
     font-size: 18px;
   }
@@ -63,7 +66,7 @@
   width: 240px;
 
   @media (min-width: $tablet-width) {
-    padding: 11px 12px 4px 16px;
+    padding: 11px 12px 4px 13px;
     width: 123px;
   }
 
@@ -118,13 +121,13 @@
 
 .table-price__feature-value--true {
   width: 31px;
-  height: 23px;
+  height: 25px;
   background-image: url("../img/icon-yes.svg");
 }
 
 .table-price__feature-value--false {
   width: 27px;
-  height: 27px;
+  height: 30px;
   background-image: url("../img/icon-no.svg");
 }
 
@@ -135,7 +138,7 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    background-position: -11px 0;
+    background-position: -12px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -146,8 +149,8 @@
 .table-price__cell--hit::before {
   content: "ХИТ";
   position: absolute;
-  top: 16px;
-  left: 10px;
+  top: 14px;
+  left: 12px;
   transform: rotate(-45deg);
   font-size: 14px;
   font-weight: 700;
@@ -155,12 +158,12 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
-    top: 11px;
-    left: 6px;
+    top: 10px;
+    left: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 15px;
-    left: 14px;
+    top: 13px;
+    left: 13px;
   }
 }

@@ -1,7 +1,7 @@
 @media (min-width: $desktop-width) {
   .efficiency {
     background-color: $silver;
-    padding-bottom: 109px;
+    padding-bottom: 0;
   }
 }
 
@@ -11,24 +11,54 @@
   @media (min-width: $tablet-width) {
     display: flex;
     text-align: left;
-    margin-left: 50%;
   }
 }
 
+.efficiency__image-text {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
+  .efficiency__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin: auto;
+  }
+
+  .efficiency__image {
+    box-sizing: border-box;
+    padding: 132px 64px 51px;
+    width: 260px;
+    background-image: url("../img/diagram-fill.svg"), url("../img/timer.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 202px 202px, 238px 276px;
+    background-position: 19px 109px, 0 54px;
+  }
+
+  .efficiency__image-text {
+    display: block;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 150px;
+    color: $pink;
+  }
+
   .efficiency__title {
     max-width: 170px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    margin-top: 95px;
-    margin-bottom: 0;
+    margin: 95px 0 0 6px;
   }
 
   .efficiency__text {
     max-width: 305px;
-    margin-top: 11px;
-    margin-bottom: 10px;
+    margin: 11px 6px 10px 5px;
+  }
+
+  .efficiency__link {
+    margin-left: 6px;
   }
 }
 
@@ -46,30 +76,46 @@
 
 
 @media (min-width: $desktop-width) {
+  .efficiency__content-wrapper {
+    padding: 17px 10px 61px;
+    width: 940px;
+  }
+
   .efficiency__text {
     max-width: 534px;
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 30px;
+    margin: 11px 35px 30px 5px;
   }
 
   .efficiency__title {
     line-height: 30px;
     max-width: 300px;
-    margin-top: 116px;
-    margin-bottom: 26px;
+    margin-top: 100px;
+    margin-bottom: 24px;
   }
 
   .efficiency__link {
     color: $pink;
     font-size: 18px;
     line-height: 30px;
+    margin-left: 5px;
   }
 
-  @media (min-width: $desktop-width) {
-    .efficiency__description {
-      margin-left: -99px;
-    }
+  .efficiency__description {
+    margin-left: -99px;
+  }
+
+  .efficiency__image-text {
+    font-size: 120px;
+    line-height: 187px;
+  }
+
+  .efficiency__image {
+    padding: 103px 64px 64px 80px;
+    width: 305px;
+    background-size: 255px 255px, 302px 354px;
+    background-position: 23px 72px, 0 0;
   }
 }
 

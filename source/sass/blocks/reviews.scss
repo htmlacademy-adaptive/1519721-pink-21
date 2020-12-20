@@ -3,11 +3,17 @@
   padding-top: 42px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 106px;
+    padding-top: 81px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 960px;
+    margin: auto;
     padding-top: 171px;
+    background-image: url("../img/quotes.svg");
+    background-position: 443px 72px;
+    background-repeat: no-repeat;
+    padding-bottom: 28px;
   }
 }
 

@@ -13,7 +13,11 @@
     <div class="page-header__wrapper page-header__wrapper--closed">
       <div class="page-header__container">
         <a class="page-header__logo">
-          <img src="img/pink.svg" width="74" height="23" alt="Логотип сайта Пинк»">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/pink-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/pink-tablet.svg">
+            <img class="page-header__image" src="img/pink.svg" width="74" height="23" alt="Логотип сайта Пинк»">
+          </picture>
         </a>
         <div class="page-header__menu">
           <button class="page-header__toggle page-header__toggle--closed" type="button" aria-label="Меню"></button>
@@ -111,14 +115,19 @@
     </section>
 
     <section class="efficiency">
-      <h2 class="visually-hidden">Эффективность приложения</h2>
-      <div class="efficiency__wrapper efficiency__visually-hidden">
-        <div class="efficiency__description">
-          <h3 class="efficiency__title">Эффект<br class="efficiency__tablet-br"> на 24 часа!</h3>
-          <p class="efficiency__text">Британские ученые провели исследования и доказали,<br
-              class="efficiency__desktop-br"> что положительный эффект<br class="efficiency__tablet-br"> от
-            использования приложения длится целые сутки!</p>
-          <a class="efficiency__link" href="#">Узнать больше об исследовании</a>
+      <div class="efficiency__content-wrapper">
+        <div class="efficiency__image">
+          <span class="efficiency__image-text">24</span>
+        </div>
+        <h2 class="visually-hidden">Эффективность приложения</h2>
+        <div class="efficiency__wrapper efficiency__visually-hidden">
+          <div class="efficiency__description">
+            <h3 class="efficiency__title">Эффект<br class="efficiency__tablet-br"> на 24 часа!</h3>
+            <p class="efficiency__text">Британские ученые провели исследования и доказали,<br
+                class="efficiency__desktop-br"> что положительный эффект<br class="efficiency__tablet-br"> от
+              использования приложения длится целые сутки!</p>
+            <a class="efficiency__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </div>
     </section>
@@ -158,9 +167,16 @@
         <button class="slider__toggle" type="button" aria-label="3"></button>
       </div>
       <div class="reviews__slider-nav slider-nav">
-        <button class="slider-nav__toggle slider-nav__toggle--prev" type="button"
-          aria-label="Предыдущий отзыв"></button>
-        <button class="slider-nav__toggle slider-nav__toggle--next" type="button" aria-label="Следующий отзыв"></button>
+        <button class="slider-nav__toggle slider-nav__toggle--prev" type="button" aria-label="Предыдущий отзыв">
+          <picture>
+            <img src="img/left-arrow.svg" width="22" height="44">
+          </picture>
+        </button>
+        <button class="slider-nav__toggle slider-nav__toggle--next" type="button" aria-label="Следующий отзыв">
+          <picture>
+            <img src="img/right-arrow.svg" width="22" height="44">
+          </picture>
+        </button>
       </div>
     </section>
 
@@ -308,7 +324,10 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" aria-label="Логотип сайта Пинк">
-        <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Логотип сайта Пинк»">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/pink-footer-desktop.svg">
+          <img src="img/pink-footer.svg" width="145" height="40" alt="Логотип сайта Пинк»">
+        </picture>
       </a>
     </div>
     <div class="page-footer__social social">

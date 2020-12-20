@@ -1,6 +1,5 @@
 .features__list-wrapper {
   background-color: $silver;
-  // background-image: url("../img/bg-triangle-white.svg");
   background-image: url("../img/bg-triangle-white-version2.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -28,7 +27,7 @@
     font-size: 50px;
     line-height: 68.09px;
     max-width: 940px;
-    margin-bottom: 61px;
+    margin-bottom: 51px;
   }
 }
 
@@ -51,8 +50,17 @@
   padding: 0;
   margin-bottom: 0;
 
-  @media (min-width: $desktop-width) {
-    padding-top: 324px;
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/iphone-smile-tablet.png");
+    background-size: 268px;
+    background-position: 19px 3px;
+    background-repeat: no-repeat;
+    width: 660px;
+    margin: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-smile-tablet@2x.png");
+    }
   }
 }
 
@@ -70,7 +78,8 @@
   padding-top: 60px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 52px;
+    padding-top: 56px;
+    margin-top: 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,6 +91,14 @@
 .features__item:last-child {
   max-width: 270px;
   padding-bottom: 302px;
+  background-image: url("../img/iphone-smile-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 57px 167px;
+  background-size: 157px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/iphone-smile-mobile@2x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -104,6 +121,8 @@
     margin-top: 0;
     margin-left: 25px;
     margin-right: 48px;
+    background-color: $silver;
+    padding-top: 26px;
   }
 
   .features__item:nth-child(2) {
@@ -114,6 +133,7 @@
     max-width: 240px;
     margin-left: 31px;
     margin-right: 20px;
+    background-image: none;
   }
 
   .features__list {
@@ -121,6 +141,18 @@
     flex-wrap: wrap;
     width: 940px;
     margin: auto;
+    padding-top: 308px;
+    background: url("../img/iphone-blackandwhite-desktop.png") 2px 3px no-repeat,
+      url("../img/iphone-pink-desktop.png") 326px 3px no-repeat,
+      url("../img/iphone-smile-desktop.png") 648px 3px no-repeat;
+    background-size: 295px, 295px, 295px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/iphone-blackandwhite-desktop@2x.png") 2px 3px no-repeat,
+        url("../img/iphone-pink-desktop@2x.png") 326px 3px no-repeat,
+        url("../img/iphone-smile-desktop@2x.png") 648px 3px no-repeat;
+      background-size: 295px, 295px, 295px;
+    }
   }
 }
 
@@ -163,7 +195,7 @@
     display: block;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
