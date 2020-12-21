@@ -2,19 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 38px 20px 50px 20px;
+  padding: 39px 20px 50px 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     width: 620px;
-    padding: 27px 5px 50px 5px;
+    padding: 29px 5px 50px 5px;
     margin: auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
-    padding-top: 92px;
+    padding-top: 65px;
   }
 }
 

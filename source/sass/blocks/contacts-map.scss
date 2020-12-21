@@ -1,23 +1,38 @@
 .contacts-map {
   position: relative;
   height: 200px;
-  padding-top: 29px;
+  padding-top: 32px;
+  background: url("../img/map-mobile.jpg") 100% 200 no-repeat center;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/map-mobile@2x.jpg") 100% 200 no-repeat center;
+  }
 
   @media (min-width: $tablet-width) {
     height: 374px;
-    padding-top: 19px;
+    padding-top: 21px;
+    background: url("../img/map-tablet.jpg") 100% 374 no-repeat center;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/map-tablet@2x.jpg") 100% 374 no-repeat center;
+    }
   }
 
   @media (min-width: $desktop-width) {
     height: 502px;
     padding-top: 15px;
+    background: url("../img/map-desktop.jpg") 100% 502 no-repeat center;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/map-desktop@2x.jpg") 100% 502 no-repeat center;
+    }
   }
 }
 
 .contacts-map::before {
   content: "";
   position: absolute;
-  top: 21px;
+  top: 23px;
   display: block;
   width: 100%;
   height: 41px;
@@ -29,7 +44,7 @@
   .contacts-map::before {
     content: "";
     position: absolute;
-    top: -16px;
+    top: -14px;
     display: block;
     width: 100%;
     height: 123px;
