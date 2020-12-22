@@ -446,12 +446,26 @@
     .download__os-item--windows {
       margin-top: 7px; } }
 
-.features__list-wrapper {
+.features__wrapper {
   background-color: #f2f2f2;
   background-image: url("../img/bg-triangle-white-version2.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: 0 0; }
+  background-position: 0 0;
+  margin-bottom: -45px; }
+
+@media (min-width: 660px) {
+  .features__wrapper-container {
+    display: flex;
+    width: 660px;
+    margin: auto; } }
+
+@media (min-width: 960px) {
+  .features__wrapper-container {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    margin: auto; } }
 
 .features__title {
   display: flex;
@@ -467,7 +481,8 @@
     .features__title {
       font-size: 40px;
       line-height: 54px;
-      max-width: 660px; } }
+      max-width: 660px;
+      margin-bottom: 28px; } }
   @media (min-width: 960px) {
     .features__title {
       font-size: 50px;
@@ -492,15 +507,9 @@
   margin-bottom: 0; }
   @media (min-width: 660px) {
     .features__list {
-      background-image: url("../img/iphone-smile-tablet.png");
-      background-size: 268px;
-      background-position: 19px 3px;
-      background-repeat: no-repeat;
-      width: 660px;
-      margin: auto; } }
-  @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {
-    .features__list {
-      background-image: url("../img/iphone-smile-tablet@2x.png"); } }
+      width: 310px;
+      order: 2;
+      margin-left: 73px; } }
 
 .features__item {
   max-width: 280px;
@@ -515,7 +524,7 @@
   padding-top: 60px; }
   @media (min-width: 660px) {
     .features__item--first {
-      padding-top: 56px;
+      padding-top: 14px;
       margin-top: 31px; } }
   @media (min-width: 960px) {
     .features__item--first {
@@ -524,20 +533,15 @@
 
 .features__item:last-child {
   max-width: 270px;
-  padding-bottom: 302px;
-  background-image: url("../img/iphone-smile-mobile.png");
+  padding-bottom: 27px;
   background-repeat: no-repeat;
   background-position: 57px 167px;
   background-size: 157px; }
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    .features__item:last-child {
-      background-image: url("../img/iphone-smile-mobile@2x.png"); } }
 
 @media (min-width: 660px) {
   .features__item {
     max-width: 310px;
-    text-align: left;
-    margin-left: 50%; }
+    text-align: left; }
   .features__item:last-child {
     max-width: 310px;
     padding-bottom: 29px; } }
@@ -563,13 +567,7 @@
     flex-wrap: wrap;
     width: 940px;
     margin: auto;
-    padding-top: 308px;
-    background: url("../img/iphone-blackandwhite-desktop.png") 2px 3px no-repeat, url("../img/iphone-pink-desktop.png") 326px 3px no-repeat, url("../img/iphone-smile-desktop.png") 648px 3px no-repeat;
-    background-size: 295px, 295px, 295px; } }
-  @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 960px) and (min-resolution: 2dppx) {
-    .features__list {
-      background: url("../img/iphone-blackandwhite-desktop@2x.png") 2px 3px no-repeat, url("../img/iphone-pink-desktop@2x.png") 326px 3px no-repeat, url("../img/iphone-smile-desktop@2x.png") 648px 3px no-repeat;
-      background-size: 295px, 295px, 295px; } }
+    padding-top: 2px; } }
 
 .features__item-title {
   font-size: 18px;
@@ -612,12 +610,44 @@
     .features__desktop-br {
       display: block; } }
 
+.features__images {
+  display: flex;
+  width: 157px;
+  margin: auto;
+  margin-bottom: -20px; }
+  @media (min-width: 660px) {
+    .features__images {
+      order: 1;
+      margin: 0 0 -66px 0;
+      width: 237px;
+      padding: 7px 0 0 20px; } }
+  @media (min-width: 960px) {
+    .features__images {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 28px;
+      margin: auto;
+      width: 940px;
+      padding: 4px 0 0 9px; } }
+
+.features__iphone-smile {
+  display: block; }
+
+.features__iphone-blackandwhite,
+.features__iphone-pink {
+  display: none; }
+  @media (min-width: 960px) {
+    .features__iphone-blackandwhite,
+    .features__iphone-pink {
+      display: block; } }
+
 .reviews {
+  position: relative;
   background-color: #ffffff;
   padding-top: 42px; }
   @media (min-width: 660px) {
     .reviews {
-      padding-top: 81px; } }
+      padding-top: 84px; } }
   @media (min-width: 960px) {
     .reviews {
       width: 960px;
@@ -924,7 +954,7 @@
       font-size: 50px;
       line-height: 68px;
       max-width: 462px;
-      margin-top: 60px;
+      margin-top: 62px;
       margin-bottom: 4px; } }
 
 .contacts-info__connect {
@@ -1089,9 +1119,11 @@
 .copyright__link {
   width: 28px;
   height: 34px;
-  background: url("../img/htmlacademy-pink.svg") no-repeat center;
   margin-left: 11px;
-  margin-top: -4px; }
+  margin-top: 0; }
+  @media (min-width: 660px) {
+    .copyright__link {
+      margin-top: -4px; } }
   @media (min-width: 960px) {
     .copyright__link {
       margin-left: 6px;
@@ -2306,29 +2338,23 @@
       display: flex;
       text-align: left; } }
 
-.efficiency__image-text {
-  display: none; }
-
 @media (min-width: 660px) {
+  .efficiency {
+    position: relative;
+    margin-top: 45px;
+    background-color: #ffffff; }
   .efficiency__content-wrapper {
     display: flex;
     justify-content: space-between;
     width: 620px;
     margin: auto; }
+  .efficiency__wrapper {
+    margin-bottom: 22px; }
   .efficiency__image {
-    box-sizing: border-box;
-    padding: 132px 64px 51px;
     width: 260px;
-    background-image: url("../img/diagram-fill.svg"), url("../img/timer.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-size: 202px 202px, 238px 276px;
-    background-position: 19px 109px, 0 54px; }
-  .efficiency__image-text {
-    display: block;
-    font-size: 96px;
-    font-weight: 700;
-    line-height: 150px;
-    color: #d22856; }
+    background-image: url("../img/timer.svg");
+    background-repeat: no-repeat;
+    background-position: 0 54px; }
   .efficiency__title {
     max-width: 170px;
     font-weight: 700;
@@ -2371,14 +2397,12 @@
     margin-left: 5px; }
   .efficiency__description {
     margin-left: -99px; }
-  .efficiency__image-text {
-    font-size: 120px;
-    line-height: 187px; }
+  .efficiency__wrapper {
+    margin-bottom: 49px; }
   .efficiency__image {
-    padding: 103px 64px 64px 80px;
     width: 305px;
-    background-size: 255px 255px, 302px 354px;
-    background-position: 23px 72px, 0 0; } }
+    background-size: 299px 352px;
+    background-position: 0 0; } }
 
 .efficiency__link {
   color: #d22856; }

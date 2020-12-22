@@ -91,35 +91,56 @@
         <p class="features__title">Устали от серости мегаполиса?</p>
         <p class="features__title">Нам есть, что вам<br class="features__title-hidden"> предложить!</p>
       </div>
-      <div class="features__list-wrapper">
-        <ul class="features__list">
-          <li class="features__item  features__item--first">
-            <h3 class="features__item-title features__item-title--first">Поднимает настроение</h3>
-            <p class="features__item-text features__item-text--first">Приложение позволит вам победить осеннюю хандру и
-              депрессию буквально в
-              несколько кликов!</p>
-          </li>
-          <li class="features__item  features__item--second">
-            <h3 class="features__item-title features__item-title--second">Меняет мир вокруг</h3>
-            <p class="features__item-text features__item-text--second">Сделайте снимок и украсьте его смайликом или
-              текстовой подписью, чтобы <br class="features__tablet-br">
-              усилить эффект</p>
-          </li>
-          <li class="features__item  features__item--third">
-            <h3 class="features__item-title features__item-title--third">Заводит новых друзей</h3>
-            <p class="features__item-text features__item-text--third">Ставьте лайки, комментируйте, делитесь
-              фотографиями с друзьями и заводите
-              новых</p>
-          </li>
-        </ul>
+      <div class="features__wrapper">
+        <div class="features__wrapper-container">
+          <ul class="features__list">
+            <li class="features__item  features__item--first">
+              <h3 class="features__item-title features__item-title--first">Поднимает настроение</h3>
+              <p class="features__item-text features__item-text--first">Приложение позволит вам победить осеннюю хандру
+                и
+                депрессию буквально в
+                несколько кликов!</p>
+            </li>
+            <li class="features__item  features__item--second">
+              <h3 class="features__item-title features__item-title--second">Меняет мир вокруг</h3>
+              <p class="features__item-text features__item-text--second">Сделайте снимок и украсьте его смайликом или
+                текстовой подписью, чтобы <br class="features__tablet-br">
+                усилить эффект</p>
+            </li>
+            <li class="features__item  features__item--third">
+              <h3 class="features__item-title features__item-title--third">Заводит новых друзей</h3>
+              <p class="features__item-text features__item-text--third">Ставьте лайки, комментируйте, делитесь
+                фотографиями с друзьями и заводите
+                новых</p>
+            </li>
+          </ul>
+          <div class="features__images">
+            <picture>
+              <img class="features__iphone-blackandwhite" src="img/iphone-blackandwhite-desktop.png"
+                srcset="img/iphone-blackandwhite-desktop@2x.png 2x"
+                alt="Телефон с изображением помойки в черно-белом цвете">
+            </picture>
+            <picture>
+              <img class="features__iphone-pink" src="img/iphone-pink-desktop.png"
+                srcset="img/iphone-pink-desktop@2x.png 2x" alt="Телефон с изображением помойки в розовом цвете">
+            </picture>
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/iphone-smile-desktop.png 1x, img/iphone-smile-desktop@2x.png 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/iphone-smile-tablet.png 1x, img/iphone-smile-tablet@2x.png 2x">
+              <img class="features__iphone-smile" src="img/iphone-smile-mobile.png"
+                srcset="img/iphone-smile-mobile@2x.png 2x"
+                alt="Телефон с изображением улыбающегося смайлика и надписью Всем привет на фоне помойки в розовом цвете ">
+            </picture>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="efficiency">
       <div class="efficiency__content-wrapper">
-        <div class="efficiency__image">
-          <span class="efficiency__image-text">24</span>
-        </div>
+        <div class="efficiency__image"></div>
         <h2 class="visually-hidden">Эффективность приложения</h2>
         <div class="efficiency__wrapper efficiency__visually-hidden">
           <div class="efficiency__description">
@@ -347,7 +368,11 @@
     </div>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+        <picture>
+          <img src="img/htmlacademy-pink.svg" width="27" height="34" alt="Логотип сайта HTML Academy»">
+        </picture>
+      </a>
     </div>
   </footer>
 
