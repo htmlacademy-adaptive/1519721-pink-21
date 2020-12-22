@@ -23,9 +23,12 @@
 .copyright__link {
   width: 28px;
   height: 34px;
-  background: url("../img/htmlacademy-pink.svg") no-repeat center;
   margin-left: 11px;
-  margin-top: -4px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -4px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-left: 6px;
