@@ -45,7 +45,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
-    margin-top: 28px;
+    margin-top: 27px;
   }
 }
 
@@ -54,7 +54,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 34px;
-    margin-top: 31px;
+    margin-top: 29px;
   }
 }
 
@@ -125,6 +125,7 @@
     padding-left: 27px;
     margin-bottom: 0;
     padding-bottom: 0;
+    margin-top: -1px;
   }
 }
 
@@ -173,13 +174,13 @@
   .gallery__like {
     grid-template-columns: 6fr 1fr;
     margin-bottom: 21px;
-    margin-top: 3px;
+    margin-top: 2px;
   }
 
   .gallery__post-likes {
     grid-column: 1;
     grid-row: 1;
-    margin-left: 31px;
+    margin-left: 29px;
   }
 
   .gallery__heart-icon {
@@ -191,40 +192,41 @@
     grid-template-columns: 4fr 1fr;
     grid-column-gap: 16px;
     order: -2;
-    margin: 28px 17px 0 0;
+    margin: 27px 14px 0 0;
   }
 
   .gallery__post-author {
     margin-top: 23px;
-    padding-left: 13px;
+    padding-left: 12px;
   }
 
   .gallery__post-author--panorama {
     order: -3;
-    margin-top: 22px;
+    margin-top: 21px;
+  }
+
+  .gallery__picture-container {
+    margin-bottom: -6px;
+  }
+
+  .gallery__post {
+    margin-bottom: 20px;
   }
 }
 
 .gallery__post--margin {
   margin-bottom: 20.5px;
-}
-
-.gallery__post-panorama {
-  position: relative;
 
   @media (min-width: $tablet-width) {
-    background-color: rgba(40, 54, 69, 0.1);
-    width: 660px;
-    height: 509px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 960px;
-    height: 506px;
+    margin-bottom: 20px;
   }
 }
 
-.gallery__post-panorama::before {
+.gallery__post--panorama {
+  position: relative;
+}
+
+.gallery__post--panorama::before {
   content: "панорама дня";
   position: absolute;
   z-index: 10;
@@ -267,7 +269,7 @@
 
 @media (min-width: $desktop-width) {
   .gallery__post-author {
-    margin-top: 25px;
+    margin-top: 24px;
     padding-left: 9px;
   }
 
@@ -276,7 +278,8 @@
   }
 
   .gallery__like--panorama {
-    margin-top: 29px;
+    margin-top: 28px;
+    margin-right: 17px;
   }
 
   .gallery__post-likes {
