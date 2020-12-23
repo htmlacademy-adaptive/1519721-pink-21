@@ -1,9 +1,10 @@
 .reviews {
+  position: relative;
   background-color: $white;
   padding-top: 42px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 81px;
+    padding-top: 84px;
   }
 
   @media (min-width: $desktop-width) {

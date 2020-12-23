@@ -14,11 +14,13 @@
   }
 }
 
-.efficiency__image-text {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
+  .efficiency {
+    position: relative;
+    margin-top: 45px;
+    background-color: $white;
+  }
+
   .efficiency__content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -26,22 +28,15 @@
     margin: auto;
   }
 
-  .efficiency__image {
-    box-sizing: border-box;
-    padding: 132px 64px 51px;
-    width: 260px;
-    background-image: url("../img/diagram-fill.svg"), url("../img/timer.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-size: 202px 202px, 238px 276px;
-    background-position: 19px 109px, 0 54px;
+  .efficiency__wrapper {
+    margin-bottom: 22px;
   }
 
-  .efficiency__image-text {
-    display: block;
-    font-size: 96px;
-    font-weight: 700;
-    line-height: 150px;
-    color: $pink;
+  .efficiency__image {
+    width: 260px;
+    background-image: url("../img/timer.svg");
+    background-repeat: no-repeat;
+    background-position: 0 54px;
   }
 
   .efficiency__title {
@@ -106,16 +101,14 @@
     margin-left: -99px;
   }
 
-  .efficiency__image-text {
-    font-size: 120px;
-    line-height: 187px;
+  .efficiency__wrapper {
+    margin-bottom: 49px;
   }
 
   .efficiency__image {
-    padding: 103px 64px 64px 80px;
     width: 305px;
-    background-size: 255px 255px, 302px 354px;
-    background-position: 23px 72px, 0 0;
+    background-size: 299px 352px;
+    background-position: 0 0;
   }
 }
 
