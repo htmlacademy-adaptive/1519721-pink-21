@@ -111,7 +111,7 @@
   }
 
   .form-photo__filter:not(:first-child) {
-    margin-top: 24px;
+    margin-top: 25px;
   }
 
   .form-photo__filters-buttons {
@@ -123,16 +123,16 @@
     width: 260px;
     padding-top: 0;
     min-height: 180px;
-    margin: 9px 11px 24px 21px;
+    margin: 8px 11px 23px 21px;
   }
 
   .form-photo__filter-range {
     width: 202px;
-    margin: 10px 16px 35px 0;
+    margin: 10px 19px 34px 0;
   }
 
   .form-photo__buttons {
-    margin: 39px 12px 0 20px;
+    margin: 41px 12px 0 20px;
   }
 
   .form-photo__foolbar {
@@ -172,7 +172,6 @@
 
   .form-photo__icon-wrapper {
     width: 44px;
-    background-color: $pink;
   }
 
   .form-photo__foolbar {
@@ -191,5 +190,20 @@
 
   .form-photo__filter:not(:first-child) {
     margin-top: 17px;
+  }
+
+  .form-photo__icon-crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  .form-photo__icon-fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .form-photo__icon-contrast {
+    width: 32px;
+    height: 32px;
   }
 }
