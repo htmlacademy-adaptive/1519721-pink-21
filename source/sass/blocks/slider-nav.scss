@@ -23,3 +23,16 @@
   top: -169px;
   left: 912px;
 }
+
+.slider-nav__img {
+  fill: rgba(40, 54, 69, 0.3);
+}
+
+.slider-nav__img:hover,
+.slider-nav__img:focus {
+  fill: rgba(40, 54, 69, 0.6);
+}
+
+.slider-nav__img:active {
+  fill: rgba(40, 54, 69, 0.1);
+}
