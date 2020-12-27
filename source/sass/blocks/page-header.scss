@@ -53,7 +53,7 @@
     position: absolute;
     top: 0;
     box-sizing: border-box;
-    max-width: 1500px;
+    max-width: 1920px;
     min-width: 320px;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 10;
@@ -65,7 +65,7 @@
     position: absolute;
     top: 0;
     box-sizing: border-box;
-    max-width: 1500px;
+    max-width: 1920px;
     min-width: 320px;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 10;
@@ -179,7 +179,7 @@
     left: 10px;
     width: 30px;
     height: 3px;
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   &::before {
@@ -210,4 +210,57 @@
 
 .page-header__toggle--nojs {
   display: none;
+}
+
+.page-header__logo-img {
+  fill: $white;
+}
+
+.page-header__logo-img--mobile {
+  display: inline;
+}
+
+.page-header__logo-img--tablet {
+  display: none;
+}
+
+.page-header__logo-img--desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-img--mobile {
+    display: none;
+  }
+
+  .page-header__logo-img--desktop {
+    display: none;
+  }
+
+  .page-header__logo-img--tablet {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo-img--mobile {
+    display: none;
+  }
+
+  .page-header__logo-img--tablet {
+    display: none;
+  }
+
+  .page-header__logo-img--desktop {
+    display: inline;
+  }
+}
+
+.page-header__logo-img:hover {
+  fill: $pink;
+}
+
+.page-header__logo-img:active {
+  fill: $white;
+  opacity: 30%;
 }

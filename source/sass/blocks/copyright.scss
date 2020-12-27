@@ -35,3 +35,15 @@
     margin-top: -6px;
   }
 }
+
+.copyright__img {
+  fill: $pink;
+}
+
+.copyright__img:hover {
+  fill: $dark-blue;
+}
+
+.copyright__img:active {
+  fill: rgba(40, 54, 69, 0.3);
+}

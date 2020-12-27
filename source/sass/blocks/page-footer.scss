@@ -31,3 +31,30 @@
     padding-top: 0;
   }
 }
+
+.page-footer__logo-img {
+  fill: $dark-blue;
+}
+
+.page-footer__logo-img:hover {
+  fill: $pink;
+}
+
+.page-footer__logo-img:active {
+  opacity: 0.3;
+  fill: $dark-blue;
+}
+
+.page-footer__logo-img--desktop {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo-img--desktop {
+    display: inline;
+  }
+
+  .page-footer__logo-img--mobile {
+    display: none;
+  }
+}
