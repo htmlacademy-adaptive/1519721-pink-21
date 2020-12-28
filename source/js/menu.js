@@ -3,6 +3,11 @@
   var navWrapper = document.querySelector(".page-header__wrapper");
   var marginMenu = document.querySelector(".menu-margin");
 
+  navMain.classList.remove("main-nav--nojs");
+  navToggle.classList.remove("page-header__toggle--nojs");
+  navWrapper.classList.remove("page-header__wrapper--nojs");
+  marginMenu.classList.remove("menu-margin--nojs")
+
   navToggle.addEventListener("click", function () {
     if (navToggle.classList.contains("page-header__toggle--closed")) {
       navToggle.classList.remove("page-header__toggle--closed");

@@ -1,4 +1,5 @@
-.menu-margin--opened {
+.menu-margin--opened,
+.menu-margin--nojs {
   margin-top: -67px;
 
   @media (min-width: $tablet-width) {
