@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 940px;
+    width: auto;
     padding-top: 38px;
   }
 }
@@ -51,6 +51,7 @@
 
 @media (min-width: $desktop-width) {
   .gallery__post-wrapper--picture {
+    width: 940px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 34px;
@@ -292,5 +293,6 @@
 
   .gallery__post--panorama {
     overflow: hidden;
+    width: 100%;
   }
 }
