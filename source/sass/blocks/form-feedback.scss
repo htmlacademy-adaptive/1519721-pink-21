@@ -440,11 +440,11 @@
 
   &:disabled + .form-feedback__label-radio {
     &::before {
-      border-color: fade($lightgray, 50%);
+      border-color: $lightgray;
     }
 
     &::after {
-      background-color: fade($lightgray, 50%);
+      background-color: $lightgray;
     }
   }
 }
