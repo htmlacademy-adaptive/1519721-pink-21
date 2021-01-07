@@ -121,7 +121,7 @@
 .page-header__toggle {
   position: absolute;
   top: -2px;
-  left: -10;
+  left: 0;
   z-index: 1;
   display: block;
   width: 50px;
@@ -140,7 +140,7 @@
 .page-header__toggle--closed::before {
   content: "";
   position: absolute;
-  top: 20;
+  top: 24px;
   right: 0;
   width: 50px;
   height: 3px;
@@ -154,16 +154,12 @@
 
 .page-header__toggle--closed:hover::before {
   background-color: $pink;
-  box-shadow:
-    0 10px 0 0 $pink,
-    0 20px 0 0 $pink;
+  box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
 }
 
 .page-header__toggle--closed:active::before {
-  background-color: fade($pink, 30%);
-  box-shadow:
-    0 10px 0 0 fade($pink, 30%),
-    0 20px 0 0 fade($pink, 30%);
+  background-color: fade($pink, 0.3);
+  box-shadow: 0 10px 0 0 fade($pink, 0.3), 0 20px 0 0 fade($pink, 0.3);
 }
 
 .page-header__toggle--opened {

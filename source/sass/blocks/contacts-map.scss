@@ -2,30 +2,15 @@
   position: relative;
   height: 200px;
   padding-top: 32px;
-  background: url("../img/map-mobile.jpg") 100% 200 no-repeat center;
-
-  @media (min-resolution: 2dppx) {
-    background: url("../img/map-mobile@2x.jpg") 100% 200 no-repeat center;
-  }
 
   @media (min-width: $tablet-width) {
     height: 374px;
     padding-top: 21px;
-    background: url("../img/map-tablet.jpg") 100% 374 no-repeat center;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/map-tablet@2x.jpg") 100% 374 no-repeat center;
-    }
   }
 
   @media (min-width: $desktop-width) {
     height: 502px;
     padding-top: 15px;
-    background: url("../img/map-desktop.jpg") 100% 502 no-repeat center;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/map-desktop@2x.jpg") 100% 502 no-repeat center;
-    }
   }
 }
 
@@ -70,4 +55,37 @@
   width: 100%;
   height: 100%;
   border: 0;
+  background-image: url("../img/map-mobile.jpg");
+  background-size: 100% 200px;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/map-tablet.jpg");
+    background-size: 100% 374px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+      background-size: 100% 374px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/map-desktop.jpg");
+    background-size: 100% 502px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+      background-size: 100% 502px;
+      background-repeat: no-repeat;
+    }
+  }
 }
