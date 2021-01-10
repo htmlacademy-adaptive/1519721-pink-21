@@ -158,6 +158,7 @@
     </section>
 
     <section class="page-form">
+      <h2 class="visually-hidden">Заполните форму</h2>
       <div class="page-form__wrapper page-inner">
         <div class="page-inner__wrapper">
           <p class="page-inner__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
@@ -238,7 +239,7 @@
                 <li class="form-feedback__name-item form-feedback__name-item--contacts form-feedback__name-item--phone">
                   <label class="form-feedback__label form-feedback__label--contacts" for="phone">Номер телефона</label>
                   <input class="form-feedback__input" type="tel" id="phone" name="phone"
-                    placeholder="Номер, пожалуйста">
+                    placeholder="Номер, пожалуйста" pattern="^[0-9]+$" maxlength="16">
                 </li>
                 <li class="form-feedback__name-item form-feedback__name-item--contacts form-feedback__name-item--email">
                   <label class="form-feedback__label form-feedback__label--contacts" for="email">Адрес почты</label>
@@ -287,7 +288,7 @@
           <div class="form-feedback__wrapper form-feedback__wrapper--button">
             <button class="form-feedback__button button button--green" type="submit">Отправить форму</button>
             <p class="form-feedback__notification"><span class="form-feedback__asterix">*</span>— обязательные<span
-                class="form-feedback__text-hidden">&thinsp;для заполнения</span>&thinsp; поля
+                class="form-feedback__text-hidden">&thinsp;для заполнения</span> поля
             </p>
           </div>
         </form>

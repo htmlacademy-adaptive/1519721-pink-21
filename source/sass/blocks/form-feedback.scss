@@ -297,6 +297,8 @@
 .form-feedback__legend {
   max-width: 218px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     max-width: 374px;
@@ -440,11 +442,11 @@
 
   &:disabled + .form-feedback__label-radio {
     &::before {
-      border-color: fade($lightgray, 50%);
+      border-color: $lightgray;
     }
 
     &::after {
-      background-color: fade($lightgray, 50%);
+      background-color: $lightgray;
     }
   }
 }

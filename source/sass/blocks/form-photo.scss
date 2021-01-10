@@ -38,6 +38,24 @@
   background-color: $pink;
 }
 
+.form-photo__filter-range::-moz-range-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  background-color: $white;
+  border: solid 2px $pink;
+  border-radius: 100%;
+}
+
+.form-photo__filter-range::-moz-range-thumb:active {
+  background-color: $pink;
+}
+
+.form-photo__filter-range::-moz-range-thumb:hover {
+  background-color: $pink;
+}
+
 .form-photo__filter-button {
   border: none;
   background-color: transparent;
@@ -135,6 +153,10 @@
     display: flex;
     flex-direction: column;
     align-content: center;
+  }
+
+  .form-photo__icon-contrast {
+    margin-left: 4px;
   }
 }
 

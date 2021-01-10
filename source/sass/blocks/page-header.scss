@@ -158,8 +158,8 @@
 }
 
 .page-header__toggle--closed:active::before {
-  background-color: fade($pink, 0.3);
-  box-shadow: 0 10px 0 0 fade($pink, 0.3), 0 20px 0 0 fade($pink, 0.3);
+  opacity: 0.3;
+  box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
 }
 
 .page-header__toggle--opened {
@@ -194,7 +194,8 @@
 
   &:active::before,
   &:active::after {
-    background-color: fade($pink, 30%);
+    opacity: 0.3;
+    background-color: $pink;
   }
 }
 
