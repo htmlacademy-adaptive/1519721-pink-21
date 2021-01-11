@@ -103,9 +103,6 @@
 .features__item:last-child {
   max-width: 270px;
   padding-bottom: 27px;
-  background-repeat: no-repeat;
-  background-position: 57px 167px;
-  background-size: 157px;
 }
 
 @media (min-width: $tablet-width) {
@@ -127,7 +124,6 @@
     margin-top: 0;
     margin-left: 25px;
     margin-right: 48px;
-    background-color: $silver;
     padding-top: 26px;
   }
 
@@ -139,7 +135,6 @@
     max-width: 240px;
     margin-left: 31px;
     margin-right: 20px;
-    background-image: none;
   }
 
   .features__list {
